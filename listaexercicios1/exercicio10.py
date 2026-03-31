@@ -1,0 +1,5 @@
+print('Calculo da função f(x,y)=3x+4y')
+valorx = int(input('Informe o valor do x: '))
+valory = int(input('Informe o valor do y: '))
+resultado = (3*(valorx)) + (4*valory)
+print(f"Resultado: {resultado}")
