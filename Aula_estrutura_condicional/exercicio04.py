@@ -6,17 +6,33 @@ import math
 
 print('=== Calculadora ===')
 print('Soma = +\nSubtracao = -\nMultiplicacao = *\nDivisão = /\nRaiz = raiz\nResto da divisão = %')
+print('\n')
 valor1 = int(input('Informe um valor: '))
 sinal = input('Informe a operação: ')
-valor2 = int(input('Informe um valor: '))
+
 operacao = sinal.lower()
 if(operacao == '+'):
+    valor2 = int(input('Informe um valor: '))
     resultado = valor1 + valor2
+    print(f'Resultado: {resultado}')
 elif(operacao == '-'):
+    valor2 = int(input('Informe um valor: '))
     resultado = valor1 - valor2
+    print(f'Resultado: {resultado}')
 elif(operacao == '*'):
+    valor2 = int(input('Informe um valor: '))
     resultado = valor1 * valor2
+    print(f'Resultado: {resultado}')
 elif(operacao == '/'):
+    valor2 = int(input('Informe um valor: '))
     resultado = valor1/valor2
+    print(f'Resultado: {resultado}')
 elif(operacao == 'raiz'):
-    resultado = 
+    resultado = math.sqrt(valor1)
+    print(f'Resultado: {resultado}')
+elif(operacao == '%'):
+    valor2 = int(input('Informe um valor: '))
+    resultado = valor1%valor2
+    print(f'Resultado: {resultado}')
+else:
+    print('Operação inválida!')
