@@ -5,10 +5,11 @@
 # ·       Exemplo de saída se N=4:
 valor = int(input('Informe um valor: '))
 mensagem = ''
-for i in range(valor+1):
-    # print(i+1)
-    for j in range(i):
-        print(f'{j+1}')
-        valor= str(j+1)
-        mensagem+=valor
-    print(mensagem)
+for i in range(valor):
+    for j in range(i+1):
+        if(j+1==1):
+            print(i+1)
+        if(i+1==valor):
+            break
+        print(j+1, end="")
+        
